@@ -21,7 +21,7 @@ const App = {
       let result = []
 
       const block = blocks[blockIndex]
-      const words = block.split('\n').filter(i => i).map(s => s.trim())
+      const words = block.split('\n').map(s => s.trim())
 
       if (blocks.length - 1 > blockIndex) {
         for (const word of words) {
